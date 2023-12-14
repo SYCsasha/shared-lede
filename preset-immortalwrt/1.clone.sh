@@ -2,7 +2,7 @@
 
 # download base code
 CODE_DIR=_firmware_code
-git clone --single-branch -b openwrt-21.02 https://github.com/immortalwrt/immortalwrt.git $CODE_DIR
+git clone --single-branch -b openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git $CODE_DIR
 mv ./$CODE_DIR/* ./
 
 # download app codes
