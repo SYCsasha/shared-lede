@@ -12,6 +12,7 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config.git
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr.git
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth 1 https://github.com/Ausaci/luci-app-nat6-helper.git
+git clone --depth 1 https://github.com/kiddin9/openwrt-packages.git
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git pw-dependencies
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
