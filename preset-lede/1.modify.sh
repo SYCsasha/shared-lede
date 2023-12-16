@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # modify login IP
-#sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 
 # modify host name
 #sed -i 's/OpenWrt/Xiaomi-Router/g' package/base-files/files/bin/config_generate
@@ -24,10 +24,10 @@ mkdir -p files/etc/uci-defaults
 cp $(dirname $0)/uci-scripts/* files/etc/uci-defaults/
 
 # switch ramips kernel to 5.10
-#sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
+sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
 
 # switch ramips kernel to 5.15
-sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.15' target/linux/ramips/Makefile
+#sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.15' target/linux/ramips/Makefile
 
 # copy kernel 5.10 version CPU overclocking patch
 #cp $(dirname $0)/../extra-files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
